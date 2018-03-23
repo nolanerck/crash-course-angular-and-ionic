@@ -87,6 +87,11 @@
 				<section>
 					<h2>Today's Agenda</h2>
 					<ul>
+						<li>High level intro to Angular, MVC and MVVM</li>
+						<li>Some Angular basics</li>
+						<li>Intro to Ionic</li>
+						<li>Some Ionic basics</li>
+						<li>A real world Angular+Ionic mobile app</li>
 					</ul>
 				</section>
 
@@ -95,7 +100,7 @@
 					<ul>
 						<li>Good understanding of “modern” JavaScript.</li>
 						<li>Scopes, anonymous functions, classes, objects.</li>
-						<li>Previous MVC experience is helpful but not req'd.</li>
+						<li>Previous MVC experience is helpful.</li>
 						<li>You'll also get exposed to:</li>
 						<li>Node.js, PhoneGap/Cordova, mobile SDKs (Android, Xcode, etc).</li>
 					</ul>
@@ -114,7 +119,7 @@
 								<li>Learning curve is higher than Angular 1.x</li>
 							</ul>
 						</li>
-						<li>And some of it is confusing at first.</li>
+						<li>Some of it is confusing at first.</li>
 					</ul>
 
 					<p>And that's NORMAL.</p>
@@ -124,13 +129,28 @@
 					<h2>What is Angular?</h2>
 
 					<ul>
-						<li>MVVM framework for JavaScript SPAs</li>
+						<li>1.x is MVC framework for JavaScript</li>
+						<li>2+ is MVVM framework for JavaScript</li>
 						<li>Command line tools</li>
 						<li>Lives on top of node and npm</li>
 						<li>Dependency Injection</li>
 						<li>Routes</li>
 						<li>2-way Data Binding</li>
 						<li>Various other things...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is MVC?</h2>
+
+					<ul>
+						<li>Model View Controller</li>
+						<li>Design Pattern</li>
+						<li>Splits your app up into 3 logical sections.</li>
+						<li>Model – where your data and related logic goes.</li>
+						<li>View – the parts of your app you “view” (HTML, CSS).</li>
+						<li>Controller - hooks Model and View together, passes data between them</li>
+						<li>The "restaurant" analogy</li>
 					</ul>
 				</section>
 
@@ -143,7 +163,7 @@
 						<li>Splits your app up into 2 logical sections.</li>
 						<li>Model – where your data and related logic goes.</li>
 						<li>View – the parts of your app you “view” (HTML, CSS).</li>
-						<li>The "a restaurant on The Jetsons" analogy.</li>
+						<li>A restaurant on The Jetsons</li>
 					</ul>
 				</section>
 
@@ -207,6 +227,7 @@ this part here is the “view”
 						<li>Constructors, methods, "this", etc all look more like Java, CFML, C#, etc</li>
 						<li>Data is typed - real ints, arrays, etc</li>
 						<li>Yay!</li>
+						<li><em>Plus</em> all the normal JavaScript stuff you know...and love?</li>
 					</ul>
 				</section>
 
@@ -222,7 +243,7 @@ this part here is the “view”
 				</section>
 
 				<section>
-					<h2>TypeScript is Object Oriented</h2>
+					<h2>TypeScript is Object Oriented JavaScript</h2>
 					<ul>
 						<li>And so by design so is Angular</li>
 						<li>All the code you write is in Classes and Objects</li>
@@ -232,7 +253,71 @@ this part here is the “view”
 				</section>
 
 				<section>
-					<h2>Angular</h2>
+					<h2>How to start using Angular?</h2>
+
+					<ul>
+						<li>Install node and npm</li>
+						<li class="code">npm install -g @angular/cli</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How to start using Angular?</h2>
+
+					<ul>
+						<li>Create a new project</li>
+						<li class="code">ng new HelloWorldApp</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How to start using Angular?</h2>
+
+					<ul>
+						<li>Serve the application</li>
+						<li class="code">cd HelloWorldApp</li>
+						<li class="code">ng serve</li>
+						<li class="code">ng serve --open</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Angular HelloWorld App</h2>
+				</section>				
+
+				<section>
+					<h2>What are &lt;these-things&gt;?</h2>
+					<ul>
+						<li>Angular Components</li>
+						<li>Building blocks for your app</li>
+						<li>Follow the MVVM design pattern</li>
+						<li>Model - your business logic and data</li>
+						<li>View - stuff you see on the screen</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Angular Components</h2>
+					<ul>
+						<li>Easiest way to add a new component</li>
+						<li class="code">ng generate component MetalBandList</li>
+						<li class="code">ng g c MetalBandList</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What's the Catch w/ Angular?</h2>
+					<ul>
+						<li>New Angular version every 6 months</li>
+						<li>Can be hard to find some details in the docs</li>
+						<li>Ionic docs and demos are a bit terse</li>
+						<li>Not everyone loves CLIs</li>
+						<li>A bit of a learning curve</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>So, That's Angular</h2>
 					<ul>
 						<li>That (in an extreme nutshell) is AngularJS.</li>
 						<li>(There are LOTS more features we didn't cover.)</li>
@@ -284,10 +369,72 @@ this part here is the “view”
 						<li>Generates all files needed to start an app.</li>
 						<li>“blank” is the template name. Several to pick from, we're starting with a bare-bones app.</li>
 						<li>[DEMO 1]</li>
-						<li>ionic start my-app tabs</li>
+						<li class="code">ionic start my-app tabs</li>
 						<li>[DEMO 2]</li>
-						<li>ionic start my-app sidemenu</li>
+						<li class="code">ionic start my-app sidemenu</li>
 						<li>[DEMO 3]</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Ionic – Serving Your App</h2>
+					<ul>
+						<li class="code">ionic serve</li>
+						<li class="code">ionic serve --lab</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>&lt;ion-*&gt; tags</h2>
+					<ul>
+						<li>Technically Angular components and services under the hood.</li>
+						<li>The stuff that looks like Angular IS Angular.</li>
+						<li>The ion-* tags are the Ionic part.</li>
+						<li>All the Angular you already know works the exact same way!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What's the catch w/ Ionic?</h2>
+					<ul>
+						<li>Same as any PhoneGap/Cordova project.</li>
+						<li>Need to install the SDKs for each platform.</li>
+						<li>Takes time, hassles, etc.</li>
+						<li>Android isn't super intuitive</li>
+						<li>iOS requires Xcode, latest OSX, etc</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>So What's the Deal with Routes?</h2>
+					<ul>
+						<li>Angular team likes to rebuild the "route" stuff.</li>
+						<li>A lot</li>
+						<li>Often</li>
+						<li>With no regard for backward compatibility</li>
+						<li>So do other 3rd parties</li>
+						<li>Make it stop!</li>
+						<li>First non-MVC sticking point</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>A Real(-ish) Ionic App</h2>
+					<ul>
+						<li>7 Seconds Discography App</li>
+						<li>Built on Angular + Ionic</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Other Resources</h2>
+					<ul>
+						<li>Angular.io, ionicframework.com, GitHub</li>
+						<li>Great Angular 4 tutoriaal on rishabh.io</li>
+						<li>"Pro AngularJS" for version 1.x stuff</li>
+						<li>Ionic Creator IDE</li>
+						<li>Ionic View – easy “private QA” app</li>
+						<li>Ray Camden's Ionic presos</li>
 					</ul>
 				</section>
 
